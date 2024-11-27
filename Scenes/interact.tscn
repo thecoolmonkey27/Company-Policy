@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://cdbxdvb1t1y2f"]
+
+[ext_resource type="Script" path="res://Scripts/interact.gd" id="1_8x0wu"]
+[ext_resource type="FontFile" uid="uid://cilovgbqvgd5s" path="res://PixelifySans-VariableFont_wght.ttf" id="2_vff6h"]
+
+[node name="Interact" type="RayCast3D"]
+target_position = Vector3(0, 0, 4)
+script = ExtResource("1_8x0wu")
+
+[node name="Prompt" type="Label" parent="."]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -24.5
+offset_bottom = 24.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("2_vff6h")
+theme_override_font_sizes/font_size = 19
+text = "Prompt
+Key"
+horizontal_alignment = 1
